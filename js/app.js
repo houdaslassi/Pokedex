@@ -8,18 +8,20 @@ const pokedex = document.getElementById("pokedex");
 		  const pokemon = results.map(data => ({
 		    name: data.name,
 		    id: data.id,
+		    image: data.sprites["front_shiny"],
 		    type: data.types.map(type => type.type.name).join(", "),
 		  }));
-		  displayPokemon(pokemon);
+		  getPokemon(pokemon);
 		});
 
-		const displayPokemon = pokemon => {
+		const getPokemon = pokemon => {
 			  console.log(pokemon);
 			  const pokemonData = pokemon
 			    .map(
 			      pokeman =>
 			        `
 			    <li>
+			         <img> src="${pokeman.image}"/</img>
 			        <h2 class="card-title">${pokeman.id}. ${pokeman.name}</h2>
 			        <p class="card-subtitle">Type: ${pokeman.type}</p>
 			    </li>
