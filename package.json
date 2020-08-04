@@ -1,0 +1,26 @@
+{
+  "name": "Pokedex",
+  "version": "1.0.0",
+  "description": "Fetching pokemons",
+  "main": "index.js",
+  "dependencies": {
+    "css": "^3.0.0",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^1.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build css/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houdaslassi/Pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houdaslassi/Pokedex/issues"
+  },
+  "homepage": "https://github.com/houdaslassi/Pokedex#readme"
+}
